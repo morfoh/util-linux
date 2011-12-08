@@ -20,6 +20,12 @@ dist_man_MANS = cal.1 chkdupexe.1 logger.1 look.1 mcookie.1 \
 
 namei_SOURCES = namei.c $(top_srcdir)/lib/strutils.c
 
+
+usrbin_exec_PROGRAMS += eject
+eject_SOURCES = eject.c
+dist_man_MANS += eject.1
+
+
 if BUILD_DDATE
 usrbin_exec_PROGRAMS += ddate
 dist_man_MANS += ddate.1
